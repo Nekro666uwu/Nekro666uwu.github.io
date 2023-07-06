@@ -1,0 +1,79 @@
+h1{ font-family:serif;
+  font-size: 30px;
+}
+h2{ font-family:serif;
+  font-size: 24px;
+}
+h2.one{ font-family:serif;
+  font-size: 20px;
+}
+h3{ font-family:serif;
+  font-size: 15px;
+}
+  /* Estilos de la barra de navegación */
+  .navbar {
+    background-color:rgb(94, 0, 182);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .brand {
+    color: rgb(165, 15, 15);
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .navbar-options {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-options li {
+    margin-right: 20px;
+  }
+  
+  .navbar-options li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-options li a:hover {
+    text-decoration: underline;
+  }
+  
+  .slider{
+    width: 95%;
+    margin:auto;
+    overflow: hidden;
+ }
+  .slider ul{
+      display: flex;
+      padding: 0;
+      width: 400%;
+    
+      animation: cambio 20s infinite;
+      animation-direction: alternate;
+  }
+.slider li{
+  height:400px;
+  width: 1000%;
+    list-style: none;
+}
+  
+@keyframes cambio {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+
+  25%{ margin-left: -100%;}
+  45%{margin-left: -100;}
+
+  50%{ margin-left: -200%;}
+  70%{margin-left: -200;}
+
+  75%{ margin-left: -300%;}
+  100%{margin-left: -300;}
+}
